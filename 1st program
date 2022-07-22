@@ -1,0 +1,15 @@
+/*Write a C program to read a character and string and print them as follows
+Input:-
+A
+Lakshmi 
+Output:
+Alakshmi*/
+
+#include<stdio.h>
+void main()
+{
+   char ch,str[30];
+   scanf("%c",&ch);
+   scanf("%s",str);
+   printf("%c%s",ch,str);
+}

@@ -1,0 +1,21 @@
+/*Write a C program to read input and print output as follows:
+Input:-
+a
+aditya
+degree college coding class
+Output:-
+a
+aditya
+degree college coding class*/
+
+
+#include<stdio.h>
+void main()
+{
+   char ch,str[30],sen[100];
+   scanf("%c",&ch);
+   scanf("%s",str);
+   scanf("\n");
+   scanf("%[^\n]s",sen);
+   printf("%c\n%s\n%s",ch,str,sen);
+}

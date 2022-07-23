@@ -1,0 +1,13 @@
+Write a C program to check if the given number is positive,negative or equal to zero
+#include<stdio.h>
+void main()
+{
+ int num;
+ scanf("%d",&num);
+ if(num>0)
+ printf("number is positive");
+ else if(num==0)
+ printf("number is zero");
+ else
+ printf("number is negative");
+}

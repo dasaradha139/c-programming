@@ -1,4 +1,4 @@
-Write a C program to check if the given number is positive,negative or equal to zero
+//Write a C program to check if the given number is positive,negative or equal to zero
 #include<stdio.h>
 void main()
 {

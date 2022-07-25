@@ -1,0 +1,14 @@
+//Write a c progam to check given input is either alphabet or not?
+
+#include<stdio.h>
+void main()
+{
+ char ch;
+ scanf("%c",&ch);
+ if(ch>=65&&ch<=90)
+ printf("character is alphabet");
+ else if(ch>=97&&ch<=122)
+ printf("character is alphabet");
+ else
+ printf("character is not alphabet");
+} 

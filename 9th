@@ -1,0 +1,35 @@
+/*Write a C program to calculate tax based on annual income. 
+Read Inputs
+1. customer name, income
+2. Find Tax based on following conditions:
+i.if Income lessthan 150000 then no tax
+ii. if Income isin range / 50000 to 300000
+then 10%.tax
+iii. if Income isin range 300000 to 500000 then 15% tax
+iv. if Income above 500000 then 20% tax
+3. Print as follows:
+Income:
+customer name:
+*****************
+tax :
+*/
+#include<stdio.h>
+void main()
+{
+ int inco,tax;
+char coname[50];
+printf("enter customer name and income:");
+scanf("%s%d",coname,&inco);
+if(inco<150000)
+tax=0;
+else if(inco>150000&&inco<300000)
+tax=(inco*10)/100;
+else if(inco>300000&&inco<500000)
+tax=(inco*15)/100;
+else if(inco>500000)
+tax=(inco*20)/100;
+printf("\tcustomer name:%s\n",coname);
+printf("\tincome:%d\n",inco);
+printf("*******************");
+printf("\n\ttax:%d",tax);
+}

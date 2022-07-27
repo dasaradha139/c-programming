@@ -1,0 +1,27 @@
+/*Question: Read two numbers and print biggest of two numbers using Switch case
+Input:
+Enter two values: 30 50
+Output:
+50
+
+Input 2:
+Enter two values: 55 24
+Output 2:
+55*/
+
+#include<stdio.h>
+void main()
+{
+	int x,y;
+	printf("enter x and y:");
+	scanf("%d%d",&x,&y);
+	switch(x>y)
+	{
+		case 1:
+			printf("%d",x);
+			break;
+		case 0:
+			printf("%d",y);
+			break;
+	}
+}

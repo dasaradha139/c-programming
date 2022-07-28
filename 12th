@@ -1,0 +1,24 @@
+/*Question: Read a number and print number is positive or negative or zero using "conditional operators"
+Input:
+Enter a values: 0
+Output:
+zero
+
+Input 2:
+Enter two values: -5
+Output 2:
+negative*/
+
+#include<stdio.h>
+void main()
+{
+ int n;
+printf("enter number:");
+scanf("%d",&n);
+if(n>0)
+printf("POSITIVE");
+else if(n==0)
+printf("ZERO");
+else
+printf("NEGATIVE");
+}

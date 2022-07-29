@@ -1,0 +1,17 @@
+/*Read two number and perform swapping of two numbers using bitwise operators
+Input 1:
+Enter a and b values: 10 20
+Output 1:
+Value of a = 20 Value of b = 10*/
+
+#include<stdio.h>
+void main()
+{
+ int a,b;
+printf("enter a and b:");
+scanf("%d%d",&a,&b);
+a=a^b;
+b=a^b;
+a=a^b;
+printf("a=%d\nb=%d",a,b);
+}

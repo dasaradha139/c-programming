@@ -1,0 +1,17 @@
+/*Write a program to read a number and print true of number is power 2 else print false
+Input: 4
+Output true
+Input: 6
+Output: false */
+
+#include<stdio.h>
+void main()
+{
+ int n;
+printf("enter number:");
+scanf("%d",&n);
+if((n&n-1)==0)
+printf("TRUE");
+else
+printf("FALSE");
+}

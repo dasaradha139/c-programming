@@ -1,0 +1,25 @@
+/*To calculate average of n numbers while loop? */
+
+#include<stdio.h>
+void main ()
+{
+int i,n,sum=0,a[30];
+float avg;
+printf("enter no.of numbers:");
+scanf("%d",&n);
+i=0;
+printf("enter numbers:");
+while(i<n)
+{
+ scanf("%d",&a[i]);
+i++;
+}
+i=0;
+while(i<n)
+{
+sum+=a[i];
+i++;
+}
+avg=sum/n;
+printf("average of %d numbers is %f",n,avg);
+}

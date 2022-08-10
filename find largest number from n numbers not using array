@@ -1,0 +1,19 @@
+// c program to find largest number from n numbers not using array
+#include<stdio.h>
+void main()
+{
+	int n,num,big;
+        printf("enter no of numbers:");
+	scanf("%d",&n);
+	printf("enter numbers:");
+	scanf("%d",&num);
+	big=num;
+	while((n-1)>0)
+	{
+	scanf("%d",&num);
+	if(big<num)
+	big=num;
+	n--;	
+	}
+	printf("%d is largest number",big);
+}

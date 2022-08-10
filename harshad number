@@ -1,0 +1,19 @@
+// program to to print given number is harshad number 156=>1+5+6=12=>156/12=0 then it IS
+#include<stdio.h>
+void main()
+{
+	int n,temp,r,sum=0;
+	printf("enter number:");
+	scanf("%d",&n);
+	temp=n;
+	while(n>0)
+	{
+    r=n%10;
+    sum+=r;
+	n=n/10;	
+	}
+	if(temp%sum==0)
+	printf("%d is harshad number",temp);
+	else
+	printf("%d is not harshad number",temp);
+}

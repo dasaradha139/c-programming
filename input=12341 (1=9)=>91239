@@ -1,0 +1,21 @@
+// program to replace specified digit to other digit input=12341 (1=9)=>91239
+#include<stdio.h>
+void main()
+{
+	int n,org,rep,r,i=1,j=1,new_num=0;
+	printf("enter number:");
+	scanf("%d",&n);
+	printf("enter original digit and digit to be placed in it:");
+	scanf("%d%d",&org,&rep);
+	while(n>0)
+	{
+    r=n%10;
+    if(r==org)
+    new_num=new_num+rep*i; 
+	else
+	new_num=new_num+r*i;
+	i=i*10; 	
+	n=n/10;	
+	}
+printf("%d",new_num);
+}

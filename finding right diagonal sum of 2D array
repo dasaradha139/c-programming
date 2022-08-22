@@ -20,7 +20,7 @@ void main()
 		i++;
 		j--;
 	}
-	printf("sum of digits of right diagnol is %d",sum);
+	printf("sum of digits of left diagnol is %d",sum);
     }
     else 
     printf("left diagnol not exist");

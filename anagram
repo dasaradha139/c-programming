@@ -1,0 +1,34 @@
+#include<stdio.h>
+#include<string.h>
+void main()
+{
+	char a[30],b[30],n1,n2,i,j;
+	gets(a);
+	n1=strlen(a);
+	gets(b);
+	n2=strlen(b);
+	if(n1!=n2)
+	printf("strings are not anagarm");
+	else{
+	for(i=0;i<n1;i++)
+		for(j=i;j<n1;j++)
+		if(a[i]>a[j])
+		{
+		char temp=a[i];
+		a[i]=a[j];
+		a[j]=temp;
+	   }
+	for(i=0;i<n2;i++)
+		for(j=i;j<n2;j++)
+		if(b[i]>b[j])
+		{
+		char temp=b[i];
+		b[i]=b[j];
+		b[j]=temp;
+	   }
+	if(a==b)
+	printf("strings are anagarm");
+	else
+	printf("strings are not anagarm");
+    }
+}

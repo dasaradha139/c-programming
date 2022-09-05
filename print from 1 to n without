@@ -1,0 +1,16 @@
+#include<stdio.h>
+void print(int start,int end)
+{
+	if(start<=end)
+	{
+		printf("%d\t",start);
+		print(start+1,end);
+	}
+  
+}
+void main()	
+{
+	int start,end;
+	scanf("%d",&end);
+	print(1,end);
+}

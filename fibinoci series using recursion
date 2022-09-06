@@ -1,0 +1,20 @@
+#include<stdio.h>
+void fibinoci();
+void main()
+{
+	int n,f1=0,f2=1;
+	scanf("%d",&n);
+	printf("%d\t%d",f1,f2);
+	fibinoci(f1,f2,n);
+}
+void fibinoci(int x, int y,int n)
+{
+	int z=x+y;
+	if(z<=n)
+	{
+	printf("\t%d",z);
+	x=y;
+	y=z;
+	fibinoci(x,y,n);
+    }
+}
